@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dul-Kx-SIl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="cIl-IQ-9IQ">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="Dul-Kx-SIl" customClass="MainViewController" customModule="liderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iVr-8R-muI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zxk-ay-rIW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LjJ-9i-G0W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWr-5y-J1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="292"/>
+        </scene>
+        <!--Left View Controller-->
+        <scene sceneID="x6h-Id-sQq">
+            <objects>
+                <viewController storyboardIdentifier="LeftViewController" id="n44-xe-1Kn" customClass="LeftViewController" customModule="liderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="adE-2m-dBu"/>
+                        <viewControllerLayoutGuide type="bottom" id="oRh-lF-cNX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hgq-tb-2h3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="我的导航" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah0-N9-6PC">
+                                <rect key="frame" x="257" y="12" width="68" height="21"/>
+                                <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.29471298237527099" green="0.20617593682150326" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ah0-N9-6PC" firstAttribute="centerX" secondItem="Hgq-tb-2h3" secondAttribute="centerX" id="Zv8-UL-EX9"/>
+                            <constraint firstItem="ah0-N9-6PC" firstAttribute="top" secondItem="Hgq-tb-2h3" secondAttribute="top" constant="20" id="b5B-aD-Vxg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3c-dx-gw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="968"/>
+        </scene>
+        <!--Right View Controller-->
+        <scene sceneID="HI6-2n-AAp">
+            <objects>
+                <viewController storyboardIdentifier="RightViewController" id="zjf-II-tLi" customClass="RightViewController" customModule="liderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jMn-AA-fbN"/>
+                        <viewControllerLayoutGuide type="bottom" id="zIS-WR-8kX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="74j-YY-gaN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PF-29-8fh">
+                                <rect key="frame" x="32" y="143" width="74" height="30"/>
+                                <state key="normal" title="我的github"/>
+                                <connections>
+                                    <action selector="githubClicked:" destination="zjf-II-tLi" eventType="touchUpInside" id="dBv-qf-0o7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="关于作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6F-3z-9Zn">
+                                <rect key="frame" x="236" y="34" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owu-B0-CSa">
+                                <rect key="frame" x="32" y="92" width="60" height="30"/>
+                                <state key="normal" title="我的博客"/>
+                                <connections>
+                                    <action selector="blogClicked:" destination="zjf-II-tLi" eventType="touchUpInside" id="LEt-hp-yqU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D6F-3z-9Zn" firstAttribute="top" secondItem="jMn-AA-fbN" secondAttribute="bottom" constant="30" id="xc4-Dp-atq"/>
+                            <constraint firstItem="D6F-3z-9Zn" firstAttribute="centerX" secondItem="74j-YY-gaN" secondAttribute="centerX" multiplier="0.8" id="ykZ-ja-gHH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8y-Sm-iZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="1632"/>
+        </scene>
+    </scenes>
+</document>
